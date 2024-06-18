@@ -68,12 +68,6 @@ namespace DatabaseCloner
                     var tables = GetTables(sourceConnection);
                     foreach (var table in tables)
                     {
-                        if (table.TableName.Contains("AuditRegistros") || table.TableName.Contains("Laudo") || table.Schema == "AgendamentoShared" || table.Schema == "AgendamentoBkp")
-                        {
-                            Console.WriteLine($"Ignorando cópia de dados para a tabela {table.Schema}.{table.TableName}...");
-                            continue;
-                        }
-
                         Console.WriteLine($"Copiando dados da tabela {table.Schema}.{table.TableName}...");
                         CloneTableData(sourceConnection, targetConnection, table);
                         Console.WriteLine($"Dados da tabela {table.Schema}.{table.TableName} copiados com sucesso.");
