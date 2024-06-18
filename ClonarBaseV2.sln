@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClonarBaseV2", "ClonarBaseV2.csproj", "{05E0E3EB-4684-4FBB-9A58-7EA51927FD85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05E0E3EB-4684-4FBB-9A58-7EA51927FD85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05E0E3EB-4684-4FBB-9A58-7EA51927FD85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05E0E3EB-4684-4FBB-9A58-7EA51927FD85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05E0E3EB-4684-4FBB-9A58-7EA51927FD85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86CE7DEC-61BA-4F80-8DFA-0BEDEFA4D189}
+	EndGlobalSection
+EndGlobal
