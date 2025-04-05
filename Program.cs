@@ -9,7 +9,6 @@ namespace DatabaseCloner
     {
         static void Main(string[] args)
         {
-            // Exemplo de uso
             string databaseName = "";
             string sourceConnectionString = $"Server=;Database=;User Id=;Password=;TrustServerCertificate=True;";
             string targetServer = "localhost";
@@ -126,7 +125,7 @@ namespace DatabaseCloner
                 @"SELECT DISTINCT s.name
                   FROM sys.schemas s
                   INNER JOIN sys.tables t ON t.schema_id = s.schema_id
-                  WHERE s.name NOT IN ('dbo','sys','AgendamentoShared','AgendamentoBkp')"
+                  WHERE s.name NOT IN ('dbo','sys')"
             );
 
             foreach (var schema in schemas)
@@ -154,7 +153,7 @@ GO
             foreach (var table in tables)
             {
                 // Pula schemas que você não quer clonar
-                if (table.Schema == "AgendamentoShared" || table.Schema == "AgendamentoBkp")
+                if (table.Schema == "" || table.Schema == "")
                     continue;
 
                 // Obtem colunas, inclusive identity e computadas
